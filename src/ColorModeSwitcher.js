@@ -2,18 +2,23 @@ import React from 'react';
 import { useColorMode, useColorModeValue, IconButton } from '@chakra-ui/react';
 import { FaMoon, FaSun } from 'react-icons/fa';
 
- const ColorModeSwitcher = props => {
+const ColorModeSwitcher = props => {
   const { toggleColorMode } = useColorMode();
   const text = useColorModeValue('dark', 'light');
   const SwitchIcon = useColorModeValue(FaMoon, FaSun);
 
   return (
     <IconButton
-    position={"fixed"}
-    top={"3"}
-    right={"4"}
+      bgColor={'teal'}
+      position={'fixed'}
+      zIndex={'overlay'}
+      top={'3'}
+      right={'4'}
       variant="ghost"
-      color="current"
+      color="white"
+      _hover={{
+        bgColor: 'teal',
+      }}
       onClick={toggleColorMode}
       icon={<SwitchIcon />}
       {...props}
