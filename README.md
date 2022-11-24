@@ -1,4 +1,13 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).\
+
+## Live project Here.
+
+- Check out the live project\_\_\_[click here](https://chakraui-video-project.vercel.app/)
+
+## Project summery
+
+- This is a simple VIDEO HUB project.
+- Implemented with react and desinged and responsive by chakra ui.
 
 ## Available Scripts
 
